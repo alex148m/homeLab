@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
         - name: backend-node
-          image: backend-node:v1
-          imagePullPolicy: Never
+          image: alex148m/backend-node:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
+      imagePullSecrets:
+        - name: dockerhub-secret
