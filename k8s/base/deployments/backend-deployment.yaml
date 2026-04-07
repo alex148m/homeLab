@@ -11,6 +11,8 @@ spec:
     metadata:
       labels:
         app: backend-node
+      annotations:
+        redeploy: "v2"
     spec:
       containers:
         - name: backend-node
