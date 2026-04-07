@@ -116,8 +116,3 @@ This project is intentionally built step-by-step to reflect real DevOps workflow
 
 ---
 
-## 📈 Status
-
-🟡 In progress – Phase 1 (k3s setup)
-
----
