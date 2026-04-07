@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   httpRequestCounter.inc();
 
   res.json({
-    message: "Hello from Kubernetes 🚀",
+    message: "ArgoCD is working 🚀🔥",
     hostname: require('os').hostname()
   });
 });
