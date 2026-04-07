@@ -15,8 +15,10 @@ spec:
       containers:
         - name: backend-node
           image: alex148m/backend-node:latest
-          imagePullPolicy: Always
           ports:
             - containerPort: 3000
+          env:
+            - name: DEMO_VERSION
+              value: "v1"
       imagePullSecrets:
         - name: dockerhub-secret
