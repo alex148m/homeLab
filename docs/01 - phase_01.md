@@ -180,3 +180,9 @@ We re-tested Kubernetes core capabilities using our custom application:
 
 * Increased and decreased replicas
 * Confirmed application remained accessible
+
+
+When I do some change I need to hit manually this commands:
+
+kubectl apply -f k8s/base/deployments/backend-deployment.yaml
+kubectl rollout restart deployment backend-node
