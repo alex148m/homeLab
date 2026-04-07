@@ -28,13 +28,3 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/backend-node:latest ./app/backend-node
           docker push ${{ secrets.DOCKER_USERNAME }}/backend-node:latest
-
-      - name: Set kubeconfig
-        run: |
-          mkdir -p ~/.kube
-          echo "${{ secrets.KUBE_CONFIG }}" > ~/.kube/config
-
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f k8s/base/deployments/backend-deployment.yaml
-          kubectl rollout restart deployment backend-node
