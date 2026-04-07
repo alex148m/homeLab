@@ -12,7 +12,7 @@ spec:
       labels:
         app: backend-node
       annotations:
-        redeploy: "v2"
+        redeploy: "v3"
     spec:
       containers:
         - name: backend-node
@@ -21,6 +21,6 @@ spec:
             - containerPort: 3000
           env:
             - name: DEMO_VERSION
-              value: "v2"
+              value: "v3"
       imagePullSecrets:
         - name: dockerhub-secret
