@@ -19,6 +19,6 @@ spec:
             - containerPort: 3000
           env:
             - name: DEMO_VERSION
-              value: "v1"
+              value: "v2"
       imagePullSecrets:
         - name: dockerhub-secret
