@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'app/backend-node/**'
+      - 'k8s/**'
+      - '.github/workflows/**'
 
 jobs:
   build-push-deploy:
